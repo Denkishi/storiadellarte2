@@ -15,11 +15,19 @@
             align-items: center;
         }
 
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-height: 60vh;
+        }
+
         #image-display {
             background-color: #2b2b2b;
             padding: 10px;
             width: 100%;
-            max-height: 60vh;
+            flex-grow: 1;
         }
 
         .button-container {
@@ -83,13 +91,15 @@
     </style>
 </head>
 <body>
-    <div id="image-display">
-        <img id="image" src="" alt="Random Image">
-    </div>
-    <div class="button-container">
-        <button id="randomize-button" class="button">Randomize Image</button>
-        <button id="reveal-button" class="button">Reveal</button>
-        <a id="instagram-button" class="button" href="https://www.instagram.com/denkishi_/" target="_blank">@denkishi_</a>
+    <div class="container">
+        <div id="image-display">
+            <img id="image" src="" alt="Random Image">
+        </div>
+        <div class="button-container">
+            <button id="randomize-button" class="button">Randomize Image</button>
+            <button id="reveal-button" class="button">Reveal</button>
+            <a id="instagram-button" class="button" href="https://www.instagram.com/denkishi_/" target="_blank">@denkishi_</a>
+        </div>
     </div>
     <div id="image-label"></div>
 
