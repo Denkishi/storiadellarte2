@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Random Image Viewer</title>
+    <title>Accetto 18</title>
     <style>
         body {
             background-color: #2b2b2b;
@@ -16,6 +16,13 @@
             padding: 10px;
         }
 
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
         .button {
             background-color: #4d4d4d;
             border: none;
@@ -27,8 +34,7 @@
             text-align: center;
             text-decoration: none;
             margin: 10px;
-            display: inline-block;
-            width: 200px;
+            width: 100%;
         }
 
         #randomize-button {
@@ -42,6 +48,8 @@
 
         #text-label {
             margin-top: 10px;
+            width: 100%;
+            text-align: center;
         }
 
         #image-label {
@@ -51,15 +59,23 @@
             white-space: pre-line;
             overflow-wrap: break-word;
             word-break: break-all;
+            width: 100%;
+        }
+
+        #image {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div id="image-display">
-        <img id="image" src="" alt="Random Image" style="max-width: 400px; max-height: 400px;">
+        <img id="image" src="" alt="Random Image">
     </div>
-    <button id="randomize-button" class="button">Randomize Image</button>
-    <button id="reveal-button" class="button">Reveal</button>
+    <div class="button-container">
+        <button id="randomize-button" class="button">Randomize Image</button>
+        <button id="reveal-button" class="button">Reveal</button>
+    </div>
     <div id="text-label">@denkishi_</div>
     <div id="image-label"></div>
 
