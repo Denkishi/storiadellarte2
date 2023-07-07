@@ -35,7 +35,7 @@
             cursor: pointer;
             font-size: 18px;
             font-weight: bold;
-            padding: 15px;
+            padding: 20px 15px;
             text-align: center;
             text-decoration: none;
             margin: 10px;
@@ -59,7 +59,7 @@
             margin-top: 10px;
             width: 100%;
             text-align: center;
-            font-size: 18px;
+            font-size: 24px;
         }
 
         #image-label {
@@ -70,13 +70,13 @@
             overflow-wrap: break-word;
             word-break: break-all;
             width: 100%;
-            font-size: 18px;
+            font-size: 24px;
         }
 
         #image {
             width: 100%;
             max-width: 100%;
-            height: auto;
+            max-height: 50vh;
             display: block;
             margin: 0 auto;
         }
@@ -101,7 +101,7 @@
             filePath = filePath.replace("Images/", "");
 
             // Format the file path with new lines after each directory
-            filePath = filePath.replace("/", "/\n");
+            filePath = filePath.replace(/\\/g, "\\\n");
 
             return filePath;
         }
