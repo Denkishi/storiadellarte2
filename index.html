@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Random Image Viewer</title>
+    <title>Accetto 18</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -10,11 +10,15 @@
             font-family: "Helvetica", Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         #image-display {
             background-color: #2b2b2b;
             padding: 10px;
+            width: 100%;
         }
 
         .button-container {
@@ -35,8 +39,7 @@
             text-align: center;
             text-decoration: none;
             margin: 10px;
-            width: 80%;
-            max-width: 300px;
+            width: 100%;
         }
 
         #randomize-button {
@@ -46,6 +49,10 @@
         #reveal-button {
             background-color: #4d4d4d;
             display: none;
+        }
+
+        #instagram-button {
+            background-color: #4d4d4d;
         }
 
         #text-label {
@@ -67,8 +74,11 @@
         }
 
         #image {
+            width: 100%;
             max-width: 100%;
             height: auto;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -79,8 +89,8 @@
     <div class="button-container">
         <button id="randomize-button" class="button">Randomize Image</button>
         <button id="reveal-button" class="button">Reveal</button>
+        <a id="instagram-button" class="button" href="https://www.instagram.com/denkishi_/" target="_blank">@denkishi_</a>
     </div>
-    <div id="text-label">@denkishi_</div>
     <div id="image-label"></div>
 
     <script>
